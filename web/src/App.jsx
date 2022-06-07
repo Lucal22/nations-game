@@ -1,5 +1,4 @@
 import { Header, Table, Results, Warning, Footer } from './container'
-import './global.css'
 
 function App() {
 
