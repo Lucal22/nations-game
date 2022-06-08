@@ -1,0 +1,25 @@
+@import '../../global.scss';
+
+
+.app__about-content {
+    position: absolute;
+    right: 23.5%;
+    max-width: 80rem;
+    border: 1px solid $gray-color;
+    border-radius: 1.5rem;
+    z-index: 10;
+    
+
+    article {
+        margin: 1rem;
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+
+}

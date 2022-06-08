@@ -1,0 +1,28 @@
+@import './global.scss';
+
+.app_dark {
+    background-color: $bg-dark;
+    a,
+    h1,
+    p {
+        color: $text-light-color;
+    }
+    .app__about-bg{
+        background-color: $bg-dark;
+    }
+}
+
+
+.app_light {
+    background-color: $bg-light;
+
+    a,
+    h1,
+    p {
+        color: $text-dark-color;
+    }
+
+    .app__about-bg{
+        background-color: $bg-light;
+    }
+}

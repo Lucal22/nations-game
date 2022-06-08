@@ -29,8 +29,13 @@ export default function Nav() {
             </ul>
 
             <Popover className='app__header-nav-menu'>
+            <Popover.Button>
+                    {isOpen ?
+                        <HiX onClick={() => setIsOpen(false)} />
+                        : <HiOutlineMenu onClick={() => setIsOpen(true)} />}
+                </Popover.Button>
                 <Popover.Panel className='app__header-nav-li'>
-                
+                <div>
                     <ul>
                         <li>
                             <a href='#Explanation'>Como jogar?</a>
@@ -43,13 +48,9 @@ export default function Nav() {
                             <a href='#About'>Sobre</a>
                         </li>
                     </ul>
-                    
+                </div>
                 </Popover.Panel>
-                <Popover.Button>
-                    {isOpen ?
-                        <HiX onClick={() => setIsOpen(false)} />
-                        : <HiOutlineMenu onClick={() => setIsOpen(true)} />}
-                </Popover.Button>
+                
 
             </Popover>
 

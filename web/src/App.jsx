@@ -1,10 +1,13 @@
-import { Header, Table, Results, Warning, Footer } from './container'
+import { Header, Table, About, Results, Warning, Footer } from './container'
+
+import './themes.scss'
 
 function App() {
 
   return (
-    <div className='app'>
+    <div className='app_light'>
       <Header />
+      <About />
       <Warning />
       <Table />
       <Results />
