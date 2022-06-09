@@ -1,17 +1,45 @@
 @import './global.scss';
 
+// DARK THEME ------------------------------------------------
+
+
 .app_dark {
     background-color: $bg-dark;
+
     a,
     h1,
     p {
         color: $text-light-color;
     }
-    .app__about-bg{
+
+    //header ----------
+    .app__header-nav-toggle-bg {
+        background-color: $yellow-color;
+    }
+
+    .app__header-motion-bg {
+        background-color: $bg-light;
+    }
+    .app__header-nav-menu-bg{
         background-color: $bg-dark;
+    }
+
+    .app__header-nav-menu-svg-bg{
+        background-color: $bg-dark;
+        color: $text-light-color;
+    }
+
+
+    //about ----------
+    .app__about-bg {
+        background-color: $bg-dark;
+    }
+    .app__about-underline-color{
+        text-decoration-color: $yellow-color;
     }
 }
 
+// LIGHT THEME ------------------------------------------------
 
 .app_light {
     background-color: $bg-light;
@@ -22,7 +50,26 @@
         color: $text-dark-color;
     }
 
-    .app__about-bg{
+    //header ----------
+    .app__header-nav-toggle-bg {
+        background-color: $red-color;
+    }
+
+    .app__header-motion-bg, .app__header-nav-menu-bg {
         background-color: $bg-light;
     }
+    .app__header-nav-menu-svg-bg{
+        background-color: $bg-light;
+        color: $text-dark-color;
+    }
+
+    //about ----------
+    .app__about-bg {
+        background-color: $bg-light;
+    }
+    .app__about-underline-color{
+        text-decoration-color: $red-color;
+    }
+
+
 }

@@ -19,7 +19,7 @@ z-index: 2;
     gap: 3rem;
     list-style: none;
     margin: 0 2rem;
-    padding-left: 6rem;
+    //padding-left: 6rem;
 
     a {
         font-size: 2rem;
@@ -28,12 +28,31 @@ z-index: 2;
 
     .app__header-nav-div {
         display: flex;
-        gap: 2rem;
+        align-items: center;
+        gap: 1.5rem;
     }
 
     @media screen and(max-width: 720px) {
         display: none;
     }
+}
+
+.app__header-nav-toggle {
+    display: flex;
+    align-items: center;
+    width: 5.5rem;
+    height: 2.4rem;
+    border-radius: 5rem;
+    cursor: pointer;
+
+    div{
+        width: 1.8rem;
+        height: 1.8rem;
+        margin: 0 0.4rem;
+        border-radius: 100%;
+
+    }
+    
 }
 
 .app__header-nav-menu {
@@ -54,28 +73,26 @@ z-index: 2;
     svg {
         width: 3.2rem;
         height: 3rem;
-        background-color: $bg-light;
     }
 
-    div {
+    .app__header-nav-li {
         position: fixed;
         top: 0;
         right: 0;
         padding-top: 4rem;
         z-index: 5;
-        text-align: end;
         box-shadow: 0 0 20px $box-shadow-light;
         height: 100%;
-        background-color: $bg-light;
 
         li {
             margin: 2rem 3rem;
             list-style: none;
+            display: flex;
+            justify-content: end;
 
             a {
                 font-size: 2rem;
                 text-decoration: none;
-                color: $gray-color;
 
                 &:hover {
                     text-decoration: underline;

@@ -3,19 +3,17 @@
 
 .app__about-content {
     position: absolute;
-    right: 23.5%;
+    right: 28.75%;
     max-width: 80rem;
     border: 1px solid $gray-color;
     border-radius: 1.5rem;
-    z-index: 10;
-    
+    z-index: 4;
 
     article {
         margin: 1rem;
         h1{
             text-align: center;
             text-decoration: underline;
-            text-decoration-color: red;
         }
         p{
             text-align: justify;
