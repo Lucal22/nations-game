@@ -13,23 +13,36 @@ z-index: 2;
 }
 
 .app__header-nav-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    //display: flex;
+    //justify-content: center;
+    //align-items: center;
     gap: 3rem;
     list-style: none;
     margin: 0 2rem;
-    //padding-left: 6rem;
+
+    h1{
+        text-align: center;
+        a{
+            font-size: 4rem;
+        }
+    }
 
     a {
         font-size: 2rem;
         text-decoration: none;
     }
 
-    .app__header-nav-div {
+    .app__header-nav-div{
         display: flex;
         align-items: center;
-        gap: 1.5rem;
+        gap: 3rem;
+    }
+    .app__header-nav-div-1 {
+
+        justify-content: end;
+
     }
 
     @media screen and(max-width: 720px) {

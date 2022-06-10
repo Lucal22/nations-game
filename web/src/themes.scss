@@ -12,6 +12,11 @@
         color: $text-light-color;
     }
 
+    span {
+        color: $yellow-color;
+
+    }
+
     //header ----------
     .app__header-nav-toggle-bg {
         background-color: $yellow-color;
@@ -20,11 +25,12 @@
     .app__header-motion-bg {
         background-color: $bg-light;
     }
-    .app__header-nav-menu-bg{
+
+    .app__header-nav-menu-bg {
         background-color: $bg-dark;
     }
 
-    .app__header-nav-menu-svg-bg{
+    .app__header-nav-menu-svg-bg {
         background-color: $bg-dark;
         color: $text-light-color;
     }
@@ -34,7 +40,8 @@
     .app__about-bg {
         background-color: $bg-dark;
     }
-    .app__about-underline-color{
+
+    .app__about-underline-color {
         text-decoration-color: $yellow-color;
     }
 }
@@ -50,15 +57,22 @@
         color: $text-dark-color;
     }
 
+    span {
+        color: $red-color;
+    }
+
+
     //header ----------
     .app__header-nav-toggle-bg {
         background-color: $red-color;
     }
 
-    .app__header-motion-bg, .app__header-nav-menu-bg {
+    .app__header-motion-bg,
+    .app__header-nav-menu-bg {
         background-color: $bg-light;
     }
-    .app__header-nav-menu-svg-bg{
+
+    .app__header-nav-menu-svg-bg {
         background-color: $bg-light;
         color: $text-dark-color;
     }
@@ -67,7 +81,8 @@
     .app__about-bg {
         background-color: $bg-light;
     }
-    .app__about-underline-color{
+
+    .app__about-underline-color {
         text-decoration-color: $red-color;
     }
 

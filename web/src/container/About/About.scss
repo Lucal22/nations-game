@@ -2,21 +2,29 @@
 
 
 .app__about-content {
+    // position: absolute;
+    // top: 20%;
+    // right: 33.95%;
     position: absolute;
-    right: 28.75%;
-    max-width: 80rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 60rem;
     border: 1px solid $gray-color;
     border-radius: 1.5rem;
     z-index: 4;
 
     article {
-        margin: 1rem;
+        margin: 3rem;
         h1{
             text-align: center;
             text-decoration: underline;
+            margin-bottom: 1.5rem;
         }
         p{
             text-align: justify;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
         }
     }
 
