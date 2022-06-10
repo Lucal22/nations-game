@@ -26,7 +26,8 @@
         background-color: $bg-light;
     }
 
-    .app__header-nav-menu-bg {
+    .app__header-nav-menu-bg,
+    .theme-bg {
         background-color: $bg-dark;
     }
 
@@ -41,7 +42,7 @@
         background-color: $bg-dark;
     }
 
-    .app__about-underline-color {
+    .app__underline-color {
         text-decoration-color: $yellow-color;
     }
 }
@@ -68,7 +69,7 @@
     }
 
     .app__header-motion-bg,
-    .app__header-nav-menu-bg {
+    .theme-bg {
         background-color: $bg-light;
     }
 
@@ -78,11 +79,8 @@
     }
 
     //about ----------
-    .app__about-bg {
-        background-color: $bg-light;
-    }
 
-    .app__about-underline-color {
+    .app__underline-color {
         text-decoration-color: $red-color;
     }
 

@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import { HiOutlineMenu, HiX } from 'react-icons/hi';
 import { Popover } from '@headlessui/react'
+import About from '../../About/About';
+import Explanation from '../../Explanation/Explanation';
+import Results from '../../Results/Results';
 import ThemeButton from './ThemeButton';
 
 function MenuButton() {
@@ -18,7 +21,7 @@ function MenuButton() {
                     onClick={() => setIsOpen(true)} />}
             </Popover.Button>
             <Popover.Panel>
-                <div className='app__header-nav-li app__header-nav-menu-bg'>
+                <div className='app__header-nav-li theme-bg'>
                     <ul>
                         <li>
                             <a href='#Explanation'>Como jogar?</a>
@@ -28,7 +31,7 @@ function MenuButton() {
                             <a href='#Results'>Resultados</a>
                         </li>
                         <li>
-                            <a href='#About'>Sobre</a>
+                        <a href='#Sobre'>Sobre</a>
                         </li>
                         <div>
                         <li>

@@ -7,7 +7,7 @@ export default function ThemeButton() {
     const dispatch = useDispatch(themeChoice);
     const [theme, setTheme] = useState(false);
 
-    function handleTheme() {
+    function handleTheme(){ 
         setTheme(!theme);
         dispatch(themeChoice(!theme));
     }

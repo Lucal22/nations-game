@@ -1,0 +1,29 @@
+@import '../../global.scss';
+
+.app__results-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60rem;
+    border: 1px solid $gray-color;
+    border-radius: 1.5rem;
+    z-index: 4;
+
+    article {
+        margin: 3rem;
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+}

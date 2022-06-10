@@ -1,4 +1,4 @@
-import { Header, Table, About, Results, Warning, Footer } from './container'
+import { Header, Table, About, Results, Footer } from './container'
 import { useSelector } from 'react-redux';
 
 
@@ -11,10 +11,7 @@ function App() {
     className={!themeSelector?'app_light':'app_dark'}
     >
       <Header />
-      <About />
-      <Warning />
       <Table />
-      <Results />
       <Footer />
     </div>
   )

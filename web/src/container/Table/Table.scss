@@ -1,3 +1,46 @@
-.app__table{
-    position: relative;
+@import '../../global.scss';
+
+.app__table {
+    height: 80vh;
+}
+
+.app__table-content {
+    max-width: 80rem;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.app__table-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+    gap: 1rem;
+}
+
+.app__table-grid-content {
+    display: block;
+    cursor: pointer;
+    border: 0.1rem solid;
+}
+
+.app__table-card {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    text-align: center;
+    width: 100%;
+    height: 10rem;
+
+    .app__table-card-number {
+        list-style: none;
+        font-size: 1.8rem;
+    }
+}
+
+.app__table-card-flag {
+    margin-top: 1rem;
+
+    img {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
 }

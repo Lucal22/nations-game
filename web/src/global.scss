@@ -30,7 +30,6 @@ html {
 }
 
 body {
-    padding-top: 0.1rem;
     font-size: 2rem;
     font-family: $font-base;
     height: 100vh;
@@ -49,6 +48,6 @@ h2 {
 }
 
 @mixin dimentions() {
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 }

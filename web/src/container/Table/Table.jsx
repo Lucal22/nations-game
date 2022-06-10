@@ -1,10 +1,26 @@
 import React from 'react'
+import Cards from './components/Cards'
+import CardList from './components/CardList'
 import './Table.scss'
 
 export default function Table (){
   return (
     <section className='app__table'>
-      <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis dicta sunt natus aperiam sed eveniet facilis tempore adipisci a. Explicabo, veritatis eos saepe officia voluptatibus sed molestiae consequuntur assumenda itaque.</h1>
+      <div className='app__table-content'>
+        <div className='app__table-grid'>
+          {CardList.map((items)=>{
+            return(
+              <Cards
+              key = {items.id}
+              country = {items.country}
+              flag = {items.flag}
+              number = {items.number}
+              numbers = {items.numbers}
+              />
+            )
+          })}
+        </div>
+      </div>
     </section>
   )
 }

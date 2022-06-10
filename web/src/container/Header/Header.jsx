@@ -2,6 +2,10 @@ import React from 'react'
 import ThemeButton from './components/ThemeButton';
 import './Header.scss'
 import MenuButton from './components/MenuButton';
+import { Popover } from '@headlessui/react';
+import About from '../About/About';
+import Explanation from '../Explanation/Explanation';
+import Results from '../Results/Results';
 
 export default function Header() {
   return (
@@ -9,21 +13,42 @@ export default function Header() {
       <nav className='app__header-nav'>
         <ul className='app__header-nav-content'>
           <div className='app__header-nav-div app__header-nav-div-1'>
-          <li>
-              <a href='#About'>Sobre</a>
+            <li>
+              <Popover>
+                <Popover.Button className='app__header-nav-button theme-bg'>
+                 <p>Sobre</p>
+                </Popover.Button>
+                <Popover.Panel>
+                  <About />
+                </Popover.Panel>
+              </Popover>
             </li>
             <li>
-              <a href='#Explanation'>Como jogar?</a>
+              <Popover>
+                <Popover.Button className='app__header-nav-button theme-bg'>
+                  <p>Como jogar?</p>
+                </Popover.Button>
+                <Popover.Panel>
+                  <Explanation />
+                </Popover.Panel>
+              </Popover>
             </li>
           </div>
           <div>
             <li>
-              <h1><a href='#'>NAÇÕES</a></h1>
+              <h1><a href='/'>NAÇÕES</a></h1>
             </li>
           </div>
           <div className='app__header-nav-div'>
             <li>
-              <a href='#Results'>Resultados</a>
+            <Popover>
+                <Popover.Button className='app__header-nav-button theme-bg'>
+                  <p>Resultados</p>
+                </Popover.Button>
+                <Popover.Panel>
+                  <Results />
+                </Popover.Panel>
+              </Popover>
             </li>
             <li>
               <ThemeButton />
