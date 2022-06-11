@@ -1,23 +1,26 @@
 import React from 'react'
 
 export default function Cards(props) {
+
     return (
-        <div className='app__table-grid-content'>
+        <div
+            onClick={()=> props.handleSelectedCountry(props.country)}
+            className='app__table-grid-content'>
             <div className='app__table-card'>
                 <div className='app__table-card-number'>
                     <p>{props.number}</p>
                 </div>
                 <div className='app__table-card-flag'>
-                    <img src= {props.flag} />
+                    <img src={props.flag} />
                 </div>
                 <div>
                     <span>
                         <ul className='app__table-card-number'>
-                        {props.numbers.map((items)=>{
-                        return(
-                        <li key={items}><p>{items}</p></li>
-                        )
-                        })}
+                            {props.numbers.map((items) => {
+                                return (
+                                    <li key={items}><p>{items}</p></li>
+                                )
+                            })}
                         </ul></span>
                 </div>
             </div>
