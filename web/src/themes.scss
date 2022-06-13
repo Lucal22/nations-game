@@ -8,6 +8,8 @@
 
     a,
     h1,
+    h2,
+    table,
     p {
         color: $text-light-color;
     }
@@ -17,7 +19,6 @@
 
     }
 
-    //header ----------
     .app__header-nav-toggle-bg {
         background-color: $yellow-color;
     }
@@ -36,8 +37,6 @@
         color: $text-light-color;
     }
 
-
-    //about ----------
     .app__about-bg {
         background-color: $bg-dark;
     }
@@ -54,6 +53,8 @@
 
     a,
     h1,
+    h2,
+    table,
     p {
         color: $text-dark-color;
     }
@@ -62,8 +63,6 @@
         color: $red-color;
     }
 
-
-    //header ----------
     .app__header-nav-toggle-bg {
         background-color: $red-color;
     }
@@ -76,13 +75,9 @@
     .app__header-nav-menu-svg-bg {
         background-color: $bg-light;
         color: $text-dark-color;
-    }
-
-    //about ----------
+    } 
 
     .app__underline-color {
         text-decoration-color: $red-color;
     }
-
-
 }

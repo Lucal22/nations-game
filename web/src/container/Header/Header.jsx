@@ -16,7 +16,7 @@ export default function Header() {
             <li>
               <Popover>
                 <Popover.Button className='app__header-nav-button theme-bg'>
-                 <p>Sobre</p>
+                 <p className='app__header-nav-p'>Sobre</p>
                 </Popover.Button>
                 <Popover.Panel>
                   <About />
@@ -26,7 +26,7 @@ export default function Header() {
             <li>
               <Popover>
                 <Popover.Button className='app__header-nav-button theme-bg'>
-                  <p>Como jogar?</p>
+                  <p className='app__header-nav-p'>Como jogar?</p>
                 </Popover.Button>
                 <Popover.Panel>
                   <Explanation />
@@ -43,7 +43,7 @@ export default function Header() {
             <li>
             <Popover>
                 <Popover.Button className='app__header-nav-button theme-bg'>
-                  <p>Resultados</p>
+                  <p className='app__header-nav-p'>Resultados</p>
                 </Popover.Button>
                 <Popover.Panel>
                   <Results />

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Cards from './components/Cards'
 import CardList from './components/CardList'
-import SendButton from './components/SendButton'
+import {SendButton} from './components/SendButton'
 import './Table.scss'
 
 export default function Table() {
@@ -9,7 +9,6 @@ export default function Table() {
 
   function handleSelectedCountry(country) {
     setSelectedCountry(country);
-    console.log(country)
   }
 
 
