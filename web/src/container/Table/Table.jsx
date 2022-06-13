@@ -6,16 +6,23 @@ import './Table.scss'
 
 export default function Table() {
   const [selectedCountry, setSelectedCountry] = useState('')
+  const [hideTable, setHideTable] = useState(false)
 
   function handleSelectedCountry(country) {
     setSelectedCountry(country);
   }
-
+  function chosed(value){
+    setHideTable()
+  }
 
   return (
     <section className='app__table'>
       <div className='app__table-content'>
+        {}
         <div className='app__table-grid'>
+          {
+            
+          }
           {CardList.map((items) => {
             return (
               <Cards
@@ -34,6 +41,7 @@ export default function Table() {
           {selectedCountry?
           <SendButton
           submitCountry={selectedCountry}
+          chosed={chosed}
         />:
         <p>Selecione uma nação!</p>
           }

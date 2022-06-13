@@ -3,8 +3,8 @@ import './Results.scss'
 
 import { localStorageData } from '../Table/components/SendButton'
 
-const storageArray = Object.entries(localStorageData);
-const storageSlice = storageArray.slice(Math.max(storageArray.length - 5, 0))
+const storageArray = localStorageData?Object.entries(localStorageData):['','','','','',];
+const storageSlice = localStorageData?storageArray.slice(Math.max(storageArray.length - 5, 0)):[];
 
 export default function Results() {
   return (

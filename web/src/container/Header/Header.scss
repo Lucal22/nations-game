@@ -8,8 +8,8 @@
 }
 
 .app__header-nav {
-@include dimentions();
-z-index: 2;
+    @include dimentions();
+    z-index: 2;
 }
 
 .app__header-nav-content {
@@ -19,9 +19,10 @@ z-index: 2;
     list-style: none;
     margin: 0 2rem;
 
-    h1{
+    h1 {
         text-align: center;
-        a{
+
+        a {
             font-size: 4rem;
             text-decoration: none;
         }
@@ -32,11 +33,12 @@ z-index: 2;
         cursor: pointer;
     }
 
-    .app__header-nav-div{
+    .app__header-nav-div {
         display: flex;
         align-items: center;
         gap: 3rem;
     }
+
     .app__header-nav-div-1 {
 
         justify-content: end;
@@ -46,6 +48,7 @@ z-index: 2;
     @media screen and(max-width: 720px) {
         display: none;
     }
+
     .app__header-nav-button {
         border: none;
         text-transform: none;
@@ -61,20 +64,21 @@ z-index: 2;
     border-radius: 5rem;
     cursor: pointer;
 
-    div{
+    div {
         width: 1.8rem;
         height: 1.8rem;
         margin: 0 0.4rem;
         border-radius: 100%;
 
     }
-    
+
 }
 
 .app__header-nav-menu {
     @media screen and (min-width: 720px) {
         display: none;
     }
+
     display: flex;
     flex-direction: column;
     position: absolute;
