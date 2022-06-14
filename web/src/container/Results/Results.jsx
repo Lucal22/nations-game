@@ -1,10 +1,9 @@
 import React from 'react'
 import './Results.scss'
 
-import { localStorageData } from '../Table/components/SendButton'
-
-const storageArray = localStorageData?Object.entries(localStorageData):['','','','','',];
-const storageSlice = localStorageData?storageArray.slice(Math.max(storageArray.length - 5, 0)):[];
+const localStorageData = JSON.parse(localStorage.getItem('Countries'));
+const storageArray = localStorageData?Object.entries(localStorageData):[];
+export const storageSlice = localStorageData?storageArray.slice(Math.max(storageArray.length - 5, 0)):[];
 
 export default function Results() {
   return (

@@ -1,0 +1,21 @@
+@import '../../global.scss';
+
+.app__draw {
+    min-height: 80vh;
+}
+
+.app__draw-content {
+    max-width: 80rem;
+    margin: 0 auto;
+    height: 100%;
+    div{
+        h1, h2{
+            text-align: center;
+            font-size: 4rem;
+        }
+        img{
+            margin-top: 2rem;
+            border: 0.5px solid;
+        }
+    }
+}
