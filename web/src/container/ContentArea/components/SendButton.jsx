@@ -9,7 +9,7 @@ let countryData = localStorage.getItem('Countries') !== null ? localStorageData 
   [{ 'day': '-', 'country': '-' },
   { 'day': '-', 'country': '-' }];
 
-let savedStorage = countryData ? Object.entries(countryData) : [];
+export let savedStorage = countryData ? Object.entries(countryData) : [];
 
 export function SendButton(props) {
 
@@ -26,9 +26,9 @@ export function SendButton(props) {
   };
 
   return (
-    <div>{savedStorage.slice(-1)[0][1].day === betDay ? <p>Você já escolheu uma nação hoje!</p> :
+    <div>
       <p>Deseja selecionar a nação: <span>{props.submitCountry}</span>?
-        <button onClick={storage}>Confirmar</button></p>}
+        <button onClick={storage}>Confirmar</button></p>
     </div>
 
   )
