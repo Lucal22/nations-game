@@ -25,13 +25,14 @@ export default function ContentArea() {
     }, 20)
   }, [])
 
-  let timeBeforeDraw = 17 - time;
-  let timeAfterDraw = 17 + 24 - time;
+  let beforeDraw = time - 17  ;
+  let afterDraw = 24 - beforeDraw;
 
   return (
     <section className='app__table'>
       <div className='app__table-content'>
-        {time === 17 && timeSum < 49 ?
+        {
+        time === 17 && timeSum < 49 ?
           <Draw
           />
           :
@@ -52,21 +53,22 @@ export default function ContentArea() {
               })}
             </div>
             <div className='app__table-submit'>
-              {savedStorage.slice(-1)[0][1].day === day ?
-                <>
-                  <p>Você já escolheu uma nação hoje!</p>
-                  <p>O resultado estará disponível em:
-                    {time < 17 || time === 17 ?
-                      (timeBeforeDraw) === 0 ?
-                        <span> menos de uma hora</span> :
-                        <span> {timeBeforeDraw} horas  </span> :
-                      <span> {timeAfterDraw} horas</span>}
-                  </p>
-                </> :
-                selectedCountry ?
-                  <SendButton
-                    submitCountry={selectedCountry} /> :
-                  <p>Selecione uma nação!</p>
+              {
+                savedStorage.slice(-1)[0][1].day === day ?
+                  <>
+                    <p>Você já escolheu uma nação hoje!</p>
+                    <p>O resultado estará disponível em:
+                      {time < 17 || time === 17 && timeSum < 49 ?
+                        (beforeDraw) === 0 ?
+                          <span> menos de uma hora</span> :
+                          <span> {beforeDraw} horas  </span> :
+                        <span> {afterDraw} horas</span>}
+                    </p>
+                  </> :
+                  selectedCountry ?
+                    <SendButton
+                      submitCountry={selectedCountry} /> :
+                    <p>Selecione uma nação!</p>
               }
             </div>
           </>

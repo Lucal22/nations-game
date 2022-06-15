@@ -36,23 +36,21 @@
     .app__header-nav-div {
         display: flex;
         align-items: center;
+        margin-top: 0.5rem;
         gap: 3rem;
     }
 
     .app__header-nav-div-1 {
-
         justify-content: end;
 
     }
 
-    @media screen and(max-width: 720px) {
-        display: none;
-    }
 
     .app__header-nav-button {
         border: none;
         text-transform: none;
         outline: none;
+
     }
 }
 
@@ -70,46 +68,6 @@
         margin: 0 0.4rem;
         border-radius: 100%;
 
-    }
-
-}
-
-.app__header-nav-menu {
-    @media screen and (min-width: 720px) {
-        display: none;
-    }
-
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 0rem;
-    align-items: flex-end;
-    margin: 2rem 0;
-
-    button {
-        z-index: 10;
-    }
-
-    svg {
-        width: 3.2rem;
-        height: 3rem;
-    }
-
-    .app__header-nav-li {
-        position: fixed;
-        top: 0;
-        right: 0;
-        padding-top: 4rem;
-        z-index: 5;
-        box-shadow: 0 0 20px $box-shadow-light;
-        height: 100%;
-
-        li {
-            margin: 2rem 3rem;
-            list-style: none;
-            display: flex;
-            justify-content: end;
-        }
     }
 
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 import ThemeButton from './components/ThemeButton';
 import './Header.scss'
-import MenuButton from './components/MenuButton';
 import { Popover } from '@headlessui/react';
+import { Question, ClipboardText, BookmarkSimple } from 'phosphor-react'
 import About from '../About/About';
 import Explanation from '../Explanation/Explanation';
 import Results from '../Results/Results';
@@ -16,7 +16,9 @@ export default function Header() {
             <li>
               <Popover>
                 <Popover.Button className='app__header-nav-button theme-bg'>
-                 <p className='app__header-nav-p'>Sobre</p>
+                 <p className='app__header-nav-p'>
+                  <BookmarkSimple size={32} />
+                 </p>
                 </Popover.Button>
                 <Popover.Panel>
                   <About />
@@ -26,7 +28,10 @@ export default function Header() {
             <li>
               <Popover>
                 <Popover.Button className='app__header-nav-button theme-bg'>
-                  <p className='app__header-nav-p'>Como jogar?</p>
+                  <p className='app__header-nav-p'>
+                    <Question 
+                    size={32} />
+                  </p>
                 </Popover.Button>
                 <Popover.Panel>
                   <Explanation />
@@ -39,11 +44,13 @@ export default function Header() {
               <h1><a href='/'>NAÇÕES</a></h1>
             </li>
           </div>
-          <div className='app__header-nav-div'>
+          <div className='app__header-nav-div app__header-nav-div-2'>
             <li>
             <Popover>
                 <Popover.Button className='app__header-nav-button theme-bg'>
-                  <p className='app__header-nav-p'>Resultados</p>
+                  <p className='app__header-nav-p'>
+                    <ClipboardText size={32} />
+                  </p>
                 </Popover.Button>
                 <Popover.Panel>
                   <Results />
@@ -55,7 +62,6 @@ export default function Header() {
             </li>
           </div>
         </ul>
-        <MenuButton />
       </nav>
     </header>
   )
