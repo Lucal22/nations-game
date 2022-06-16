@@ -1,15 +1,8 @@
 @import '../../global.scss';
 
 .app__results-content {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 60rem;
-    border: 1px solid $gray-color;
-    border-radius: 1.5rem;
-    z-index: 4;
-
+    @include popoverDImentions();
+    
     article {
         display: flex;
         flex-direction: column;
@@ -30,16 +23,22 @@
             font-size: 2rem;
             margin-bottom: 1.5rem;
         }
-        table, th, td {
-            border:1px solid black;
-            max-width: 50rem;
-            height: 7rem;
-            text-align: center;
-            th, td{
-                padding: 1rem;
+        .app__results-flex {
+            display: flex;
+            justify-content: center;
+            table, th, td {
+                border:1px solid black;
+                max-width: 50rem;
+                height: 7rem;
                 text-align: center;
-            }
-          }
+                th, td{
+                    width: 15rem;
+                    padding: 1rem;
+                    text-align: center;
+                }
+              }
+        }
+        
     }
 
 }

@@ -7,6 +7,9 @@ const localStorageData = JSON.parse(localStorage.getItem('Countries'));
 
 let countryData = localStorage.getItem('Countries') !== null ? localStorageData :
   [{ 'day': '-', 'country': '-' },
+  { 'day': '-', 'country': '-' },
+  { 'day': '-', 'country': '-' },
+  { 'day': '-', 'country': '-' },
   { 'day': '-', 'country': '-' }];
 
 export let savedStorage = countryData ? Object.entries(countryData) : [];
