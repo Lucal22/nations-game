@@ -1,10 +1,12 @@
 import React from 'react'
+import { rand } from '../Draw/components/DrawNumber';
 import './Results.scss'
 
 const localStorageData = JSON.parse(localStorage.getItem('Countries'));
 const storageArray = localStorageData?Object.entries(localStorageData):[];
 export const storageSlice = localStorageData?storageArray.slice(Math.max(storageArray.length - 5, 0)):[];
-const country=['Brasil', 'Brasil', 'Brasil', 'Brasil', 'Brasil',]
+const results = []
+results.push(rand);
 
 export default function Results() {
   return (
@@ -42,7 +44,7 @@ export default function Results() {
             </thead>
             <tbody>
               <tr>
-                <td>Brasil</td>
+                <td>{results}</td>
               </tr>
               <tr>
                 <td>Brasil</td>

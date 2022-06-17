@@ -8,12 +8,6 @@ function DrawNumber() {
 }
 export const rand = DrawNumber()
 
-
-// const randNumber = Math.round(min + (Math.random() * (max - min)));
-// const randString = randNumber.toString();
-// const lastNumbers = randString.slice(2);
-// return(lastNumbers);
-
 // await api.post('/draws',{
         //     draw: randString,
         //     day: ''
