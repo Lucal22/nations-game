@@ -1,11 +1,9 @@
 import express from 'express';
 import { prisma } from './prisma';
 
-const routes = express.Router()
+export const routes = express.Router()
 
-
-
-export default routes.post('/draws', async (req, res) => {
+routes.post('/postDraw', async (req, res) => {
     const { date, number, country } = req.body
 
     const postDraw = await prisma.draws.create({
@@ -21,17 +19,19 @@ export default routes.post('/draws', async (req, res) => {
     )
 })
 
-routes.get('/draws', async (req, res) => {
+routes.get('/getDraw', async (req, res) => {
     const { date, number, country } = req.body
 
-    prisma.draws.findMany({
+    const getDraw = await prisma.draws.findMany({
         where: {
             date,
             country
-        },
-        orderBy: {
-            id: 'desc',
+        }, orderBy: {
+            id: 'desc'
         },
         take: 5,
     });
+    return res.status(200).json({
+        getDraw
+    })
 })

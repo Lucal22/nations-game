@@ -11,12 +11,12 @@ datasource db {
 }
 
 model Draws {
-  id String @id @default(uuid())
-  
-  date      String
-  number    String
-  country   String
+  id Int @id @default(autoincrement())
+
+  date    String
+  number  String
+  country String
 
 
-@@map("draws")
+  @@map("draws")
 }
