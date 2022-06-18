@@ -1,16 +1,39 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { rand } from './components/DrawNumber'
 import CardList from '../ContentArea/components/CardList';
-import { day } from '../_components/Clock';
+import { dayUae } from '../_components/Clock';
 import { storageSlice } from '../Results/Results'
+import { apiPost } from '../../lib/api';
+
 
 import './Draw.scss'
+import { useState } from 'react';
 
 const lastStorageObject = storageSlice.slice(-1)[0];
 const lastCountrySelected = storageSlice.length < 3 ? [] : lastStorageObject[1];
-const lastDayString = (day - 1)
+const lastDayString = (dayUae - 1)
+const date = new Date();
+const dateDb = `${date.getDate()}/0${date.getMonth() + 1}`
+const lastNumbers = rand.slice(2);
 
 export default function Draw() {
+  const [post, setPost] = useState(true);
+
+
+  if (post) {
+    async function dataPost() {
+      await apiPost.post('/postDraw', {
+        date: dateDb,
+        number: rand,
+      })
+      setPost(false)
+    }
+    dataPost()
+  }
+
+
+
+
 
   return (
     <section className='app__Draw'>
@@ -18,7 +41,7 @@ export default function Draw() {
         {
           CardList.map((items) => {
             return items.numbers.map((number, key) => {
-              return (number === rand ?
+              return (number === lastNumbers ?
                 <div key={key} className=''>
                   <h1>A nação de hoje é: </h1>
                   <h2><span>{items.country}</span></h2>
@@ -39,7 +62,6 @@ export default function Draw() {
           })
         }
       </div>
-
     </section>
   )
 }

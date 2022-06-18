@@ -1,17 +1,13 @@
-import { createSlice }  from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 
 
 const localStorageTheme = localStorage.getItem('Theme');
 const localTheme = (localStorageTheme === 'true');
 
-console.log(localTheme)
-console.log(typeof(localTheme))
-
-
 export const themeSlice = createSlice({
     name: 'theme',
     initialState: {
-        value: localStorageTheme !== null?localTheme:false
+        value: localStorageTheme !== null ? localTheme : false
     },
     reducers: {
         themeChoice: (state, action) => {
@@ -20,7 +16,7 @@ export const themeSlice = createSlice({
     }
 });
 
-export const {themeChoice} = themeSlice.actions;
+export const { themeChoice } = themeSlice.actions;
 
 
 export default themeSlice.reducer;

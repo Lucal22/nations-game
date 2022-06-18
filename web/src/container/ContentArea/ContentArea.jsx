@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Cards from './components/Cards'
 import CardList from './components/CardList'
 import { SendButton, savedStorage } from './components/SendButton'
-import { day } from '../_components/Clock'
+import { dayUae } from '../_components/Clock'
 import Draw from '../Draw/Draw'
 import './ContentArea.scss'
 
@@ -27,12 +27,12 @@ export default function ContentArea() {
 
   let beforeDraw = 17 - time;
   let afterDraw = 24 + beforeDraw;
-
+  //  && timeSum < 49 && timeSum > 17 
   return (
     <section className='app__table'>
       <div className='app__table-content'>
         {
-          time === 17 && timeSum < 49 ?
+          time !== 17 ?
             <Draw
             />
             :
@@ -54,7 +54,7 @@ export default function ContentArea() {
               </div>
               <div className='app__table-submit'>
                 {
-                  savedStorage.slice(-1)[0][1].day === day ?
+                  savedStorage.slice(-1)[0][1].day === dayUae ?
                     <>
                       <p>Você já escolheu uma nação hoje!</p>
                       <p>O resultado estará disponível em:

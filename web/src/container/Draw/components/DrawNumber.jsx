@@ -1,14 +1,8 @@
-import { date } from '../../_components/Clock'
+import { dateUae } from '../../_components/Clock'
 
 function DrawNumber() {
-    const randNumber = (date.getFullYear() * date.getDate() * (date.getMonth() + 1)) % 9999;
+    const randNumber = (dateUae.getFullYear() * dateUae.getDate() * (dateUae.getMonth() + 1) % 9999) + 1000;
     const randString = randNumber.toString();
-    const lastNumbers = randString.slice(2);
-    return (lastNumbers);
+    return (randString);
 }
 export const rand = DrawNumber()
-
-// await api.post('/draws',{
-        //     draw: randString,
-        //     day: ''
-        // }) 

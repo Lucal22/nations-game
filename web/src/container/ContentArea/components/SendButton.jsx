@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { date } from '../../_components/Clock';
+import { dateUae } from '../../_components/Clock';
 
-export const betDay = date.getDate();
+export const betDay = dateUae.getDate();
 
 const localStorageData = JSON.parse(localStorage.getItem('Countries'));
 
@@ -32,8 +32,8 @@ export function SendButton(props) {
   };
 
   return (
-    <div>{selected ?<> <p>Você escolheu a nação {props.submitCountry}.</p>
-       <p>Volte as 17h para ver o resultado!</p></>:
+    <div>{selected ? <> <p>Você escolheu a nação {props.submitCountry}.</p>
+      <p>Volte as 17h para ver o resultado!</p></> :
       <p>Deseja selecionar a nação: <span>{props.submitCountry}</span>?
         <button onClick={storage}>Confirmar</button></p>}
     </div>

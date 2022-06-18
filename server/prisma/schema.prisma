@@ -15,8 +15,9 @@ model Draws {
 
   date    String
   number  String
-  country String
+  country String?
 
 
+  @@unique(date)
   @@map("draws")
 }
