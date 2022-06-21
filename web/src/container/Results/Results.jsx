@@ -1,6 +1,5 @@
-import React from 'react'
-import { rand } from '../Draw/components/DrawNumber';
-import './Results.scss'
+import React from 'react';
+import './Results.scss';
 import DrawedCountries from './components/DrawedCountries';
 
 

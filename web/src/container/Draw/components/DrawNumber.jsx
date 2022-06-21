@@ -1,4 +1,4 @@
-import { dateUae } from '../../_components/Clock'
+import { dateUae } from '../../_components/Clock';
 
 
 function DrawNumber() {

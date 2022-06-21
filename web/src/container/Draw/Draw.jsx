@@ -1,9 +1,9 @@
-import React from 'react'
-import { rand } from './components/DrawNumber'
+import React from 'react';
+import { rand } from './components/DrawNumber';
 import CardList from '../ContentArea/components/CardList';
 import { dayUae } from '../_components/Clock';
-import { storageSlice } from '../Results/Results'
-import './Draw.scss'
+import { storageSlice } from '../Results/Results';
+import './Draw.scss';
 
 const lastStorageObject = storageSlice.slice(-1)[0];
 const lastCountrySelected = storageSlice.length < 3 ? [] : lastStorageObject[1];

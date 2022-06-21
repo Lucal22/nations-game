@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import Cards from './components/Cards'
-import CardList from './components/CardList'
-import { SendButton, savedStorage } from './components/SendButton'
-import { dayUae } from '../_components/Clock'
-import Draw from '../Draw/Draw'
-import './ContentArea.scss'
+import React, { useEffect, useState } from 'react';
+import Cards from './components/Cards';
+import CardList from './components/CardList';
+import { SendButton, savedStorage } from './components/SendButton';
+import { dayUae } from '../_components/Clock';
+import Draw from '../Draw/Draw';
+import './ContentArea.scss';
 
 export default function ContentArea() {
   const [selectedCountry, setSelectedCountry] = useState('')
