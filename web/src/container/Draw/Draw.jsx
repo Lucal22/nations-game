@@ -1,39 +1,16 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { rand } from './components/DrawNumber'
 import CardList from '../ContentArea/components/CardList';
 import { dayUae } from '../_components/Clock';
 import { storageSlice } from '../Results/Results'
-import { apiPost } from '../../lib/api';
-
-
 import './Draw.scss'
-import { useState } from 'react';
 
 const lastStorageObject = storageSlice.slice(-1)[0];
 const lastCountrySelected = storageSlice.length < 3 ? [] : lastStorageObject[1];
-const lastDayString = (dayUae - 1)
-const date = new Date();
-const dateDb = `${date.getDate()}/0${date.getMonth() + 1}`
+const lastDayString = (dayUae - 1);
 const lastNumbers = rand.slice(2);
 
 export default function Draw() {
-  const [post, setPost] = useState(true);
-
-
-  if (post) {
-    async function dataPost() {
-      await apiPost.post('/postDraw', {
-        date: dateDb,
-        number: rand,
-      })
-      setPost(false)
-    }
-    dataPost()
-  }
-
-
-
-
 
   return (
     <section className='app__Draw'>
