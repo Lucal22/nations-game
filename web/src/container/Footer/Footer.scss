@@ -1,3 +1,23 @@
-.app__footer {
+.app__footer-content {
+    display: flex;
+    max-width: 1200px;
     height: 10vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            font-size: 1.6rem;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
 }

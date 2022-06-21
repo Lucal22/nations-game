@@ -1,6 +1,7 @@
 import React from 'react';
 import './Results.scss';
 import DrawedCountries from './components/DrawedCountries';
+import { dayUae } from '../_components/Clock'
 
 
 const localStorageData = JSON.parse(localStorage.getItem('Countries'));
@@ -12,14 +13,33 @@ export default function Results() {
     <section className='app__results'>
       <div className='app__results-content theme-bg'>
         <article>
-          <h1 className='app__underline-color'>Resultados</h1>
+          <h1 className='app__underline-color'>RESULTADOS</h1>
           <p>Aqui é possível visualizar as suas 5 últimas apostas e os resultados os últimos 5 dias.</p>
           <h2>Suas últimas apostas e resultados:</h2>
           <div className='app__results-flex'>
             <table>
               <thead>
                 <tr>
-                  <th>Dia</th>
+                  <th>
+                    Dia
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  [dayUae - 4, dayUae - 3, dayUae - 2, dayUae - 1, dayUae].map((item, key) => {
+                    return (
+                      <tr key={key}>
+                        <td>{item}</td>
+                      </tr>
+                    )
+                  }
+                  )}
+              </tbody>
+            </table>
+            <table>
+              <thead>
+                <tr>
                   <th>Aposta</th>
                 </tr>
               </thead>
@@ -27,7 +47,6 @@ export default function Results() {
                 {storageSlice.map((item, key) => {
                   return (<tr
                     key={key}>
-                    <td>{item[1].day}</td>
                     <td>{item[1].country}</td>
                   </tr>)
                 })}

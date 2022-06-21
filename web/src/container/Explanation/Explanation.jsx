@@ -6,7 +6,7 @@ export default function Explanation() {
     <section className='app__explanation'>
       <div className='app__explanation-content theme-bg'>
         <article>
-          <h1 className='app__underline-color'>Como jogar?</h1>
+          <h1 className='app__underline-color'>COMO JOGAR?</h1>
 
           <p>Para jogar é bem simples, basta <span>clicar na bandeira da nação</span> que deseja escolher e confirmar no final da página.</p>
 
