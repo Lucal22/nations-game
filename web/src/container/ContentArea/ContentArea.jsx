@@ -27,12 +27,12 @@ export default function ContentArea() {
 
   let beforeDraw = 17 - time;
   let afterDraw = 24 + beforeDraw;
-  //   && timeSum < 48 && timeSum > 17 
+  // 
   return (
     <section className='app__table'>
       <div className='app__table-content'>
         {
-          time !== 17 ?
+          time !== 17 && timeSum < 48 && timeSum > 17 ?
             <Draw
             />
             :
