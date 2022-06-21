@@ -1,15 +1,12 @@
 import React from 'react'
 import { rand } from '../Draw/components/DrawNumber';
 import './Results.scss'
-import { dateUae } from '../_components/Clock';
 import DrawedCountries from './components/DrawedCountries';
 
 
 const localStorageData = JSON.parse(localStorage.getItem('Countries'));
 const storageArray = localStorageData ? Object.entries(localStorageData) : [];
 export const storageSlice = localStorageData ? storageArray.slice(Math.max(storageArray.length - 5, 0)) : [];
-const results = []
-results.push(rand);
 
 export default function Results() {
   return (
@@ -47,7 +44,7 @@ export default function Results() {
               </thead>
               <tbody>
                 {
-                  [4, 3, 2, 1].map((item, key) => {
+                  [3, 2, 1, 0].map((item, key) => {
                     return (
                       <DrawedCountries
                         key={key}
