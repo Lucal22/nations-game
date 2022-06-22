@@ -1,6 +1,6 @@
 # Jogo das Nações pt-br
 
-Este projeto é uma page responsiva feita em react.js com o intuito de apresentar alguns dos principais projetos desenvolvidos por mim durante meus estudos.
+Este projeto é uma page responsiva feita em react.js com o intuito de desenvolver um jogo de aposta onde é possível tentar adivinhar qual a nação do dia.
 
 ## Tecnologias
 
@@ -8,41 +8,27 @@ Este projeto é uma page responsiva feita em react.js com o intuito de apresenta
 - [HTML](https://www.w3schools.com/html/)
 - [CSS](https://www.w3schools.com/css/)
 - [React.js](https://pt-br.reactjs.org/)
-
-### Backend
-- [TypeScript](https://www.typescriptlang.org/)
-- [Node.js](https://nodejs.org/en/)
+- [React Redux](https://react-redux.js.org/)
 
 ## Bibliotecas
 
 ### Frontend
 - [Framer motion](https://www.framer.com/motion/)
 - [SCSS](https://sass-lang.com/)
-- [Axios](https://axios-http.com/ptbr/docs/intro)
-
-### Backend
-- [Express](https://expressjs.com/pt-br/)
-- [CORS](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/CORS)
-- [Prisma](https://www.prisma.io/)
-- [Nodemailer](https://nodemailer.com/about/)
+- [Headlessui](https://headlessui.dev/)
 
 ## Utilitários
 - [Phosphor icons](https://phosphoricons.com/)
-- [React icons](https://react-icons.github.io/react-icons)
 
 ## Desenvolvimento
 
-  Para desenvolver o frontend foi utilizado framer motion para realizar as animações da página inicial, do menu de barras e da seção 'sobre' e a estilização utilizando scss facilita mudar o estilo de tags filhos específicas.
+  Para desenvolver o frontend foi utilizado framer motion para realizar a animação do botão de mudança de tema, junto com popover da biblioteca [Headlessui](https://headlessui.dev/) para melhorar a acessibilidade na abertura das páginas e SCSS para fazer o style do website.
 
-Utilizando 'props' foi possível simplificar partes do código onde se repetiria procedimentos e com isso facilitar futuras inserções como por exemplo para adicionar novos projetos.
+  Foi utilizado React Redux para envio do estado que altera o tema do site e utilizando o localStorage foi possível salvar tanto o tema preferido quanto os palpites que foram escolhidos anteriormente pelo usuário
 
-Para coletar os dados inseridos no formulário, utilizou-se de states e uma função assíncrona para o envio das informações para o backend utilizando o Axios.
+  O sorteio diário é feito com base em um cálculo utilizando o dia e mês atual, sendo possível selecionar um número de 4 dígitos diferente diariamente.
 
-O Express foi utilizado para realizar a rota onde os dados seriam recebidos e enviados para o banco de dados que foi configurado com o auxilio do Prisma.
-
-Ao mesmo tempo em que os dados eram enviados para o banco de dados, o nodemailer foi utilizado para que também fosse possível realizar as configurações para envio direto para o email.
-
-O frontend foi hospedado no [Vercel](https://vercel.com/) e o backend hospedado no [Railway](https://railway.app/).
+O frontend foi hospedado no [Vercel](https://vercel.com/).
 
 
 ## Licença
@@ -51,7 +37,7 @@ O frontend foi hospedado no [Vercel](https://vercel.com/) e o backend hospedado 
 
 # Lucal Portfolio en-us
 
-This project is a responsive page developed using react.js on frontend, to show some of my main projects developed during my studies.
+This project is a responsive page developed using react.js to develop a gamble game that allows the user to select one of the 25 nations in the game. Everyday theres a draw that selects one of the 25 nations so the player can compare if had a lucky day.
 
 ## Technologies
 
@@ -59,41 +45,30 @@ This project is a responsive page developed using react.js on frontend, to show 
 - [HTML](https://www.w3schools.com/html/)
 - [CSS](https://www.w3schools.com/css/)
 - [React.js](https://pt-br.reactjs.org/)
+- [React Redux](https://react-redux.js.org/)
 
-### Backend
-- [TypeScript](https://www.typescriptlang.org/)
-- [Node.js](https://nodejs.org/en/)
 
 ## Libs
 
 ### Frontend
 - [Framer motion](https://www.framer.com/motion/)
 - [SCSS](https://sass-lang.com/)
-- [Axios](https://axios-http.com/ptbr/docs/intro)
+- [Headlessui](https://headlessui.dev/)
 
-### Backend
-- [Express](https://expressjs.com/pt-br/)
-- [CORS](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/CORS)
-- [Prisma](https://www.prisma.io/)
-- [Nodemailer](https://nodemailer.com/about/)
+
 
 ## Utilities
 - [Phosphor icons](https://phosphoricons.com/)
-- [React icons](https://react-icons.github.io/react-icons)
 
 ## Development
 
- To develop the frontend, framer motion was used to animate the home page, the bar menu and the 'about' section, and styling using scss makes it easy to change the style of specific child components.
+For the frontend development it was used framer motion to do the animation of the theme button, and the popover component from the [Headlessui](https://headlessui.dev/) lib to improve the acessibility oppening the pages and SCSS to style the website.
 
-Using 'props' it was possible to simplify parts of the code where procedures would be repeated and thus facilitate future insertions as adding new projects.
+It was used React Redux to send the state that handles the theme change and using the localStorage was possible to save the theme preference and the previous countries that the user selected. 
 
-For the data entered in the form, it was used state components and an asynchronous function to send the information using Axios.
+To make the daily draw, it was used a math operation involving  the date components.
 
-Express was used to perform the route where the data would be received and sent to the database that was configured using Prisma.
-
-At the same time that the data was sent to the database, the nodemailer was used so that it was also possible to configure the settings to send the message to an email.
-
-The frontend was hosted on [Vercel](https://vercel.com/) and the backend hosted on [Railway](https://railway.app/).
+The frontend was hosted on [Vercel](https://vercel.com/).
 
 
 ## License
