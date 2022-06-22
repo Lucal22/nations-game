@@ -2,6 +2,8 @@
 
 Este projeto é uma page responsiva feita em react.js com o intuito de desenvolver um jogo de aposta onde é possível tentar adivinhar qual a nação do dia.
 
+![Website frontpage](/web/src/assets/img/themeImg.png)
+
 ## Tecnologias
 
 ### Frontend
