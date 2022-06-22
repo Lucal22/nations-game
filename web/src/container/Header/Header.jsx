@@ -16,9 +16,9 @@ export default function Header() {
             <li>
               <Popover>
                 <Popover.Button className='app__header-nav-button theme-bg'>
-                 <p className='app__header-nav-p'>
-                  <BookmarkSimple size={32} />
-                 </p>
+                  <p className='app__header-nav-p'>
+                    <BookmarkSimple size={32} />
+                  </p>
                 </Popover.Button>
                 <Popover.Panel>
                   <About />
@@ -29,8 +29,8 @@ export default function Header() {
               <Popover>
                 <Popover.Button className='app__header-nav-button theme-bg'>
                   <p className='app__header-nav-p'>
-                    <Question 
-                    size={32} />
+                    <Question
+                      size={32} />
                   </p>
                 </Popover.Button>
                 <Popover.Panel>
@@ -40,13 +40,13 @@ export default function Header() {
             </li>
           </div>
           <div>
-            <li>
+            <li className='app__header-nav-h1'>
               <h1><a href='/'>NAÇÕES</a></h1>
             </li>
           </div>
           <div className='app__header-nav-div app__header-nav-div-2'>
             <li>
-            <Popover>
+              <Popover>
                 <Popover.Button className='app__header-nav-button theme-bg'>
                   <p className='app__header-nav-p'>
                     <ClipboardText size={32} />
