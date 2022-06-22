@@ -2,7 +2,7 @@
 
 .app__results-content {
     @include popoverDImentions();
-    
+
     article {
         display: flex;
         flex-direction: column;
@@ -14,7 +14,7 @@
             margin-bottom: 1.5rem;
         }
 
-        h2{
+        h2 {
             margin-bottom: 1.5rem;
         }
 
@@ -23,22 +23,28 @@
             font-size: 2rem;
             margin-bottom: 1.5rem;
         }
+
         .app__results-flex {
             display: flex;
             justify-content: center;
-            table, th, td {
-                border:1px solid black;
+
+            table,
+            th,
+            td {
+                border: 1px solid black;
                 max-width: 50rem;
-                height: 7rem;
+                height: 8rem;
                 text-align: center;
-                th, td{
+
+                th,
+                td {
                     width: 15rem;
                     padding: 1rem;
                     text-align: center;
                 }
-              }
+            }
         }
-        
+
     }
 
 }
