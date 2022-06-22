@@ -8,7 +8,7 @@ import './Draw.scss';
 const lastStorageObject = storageSlice.slice(-1)[0];
 const lastCountrySelected = storageSlice.length < 3 ? [] : lastStorageObject[1];
 const lastDayString = (dayUae - 1);
-const lastNumbers = rand.slice(2);
+const lastNumbers = rand.slice(-2);
 
 export default function Draw() {
 

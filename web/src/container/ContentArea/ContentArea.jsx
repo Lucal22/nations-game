@@ -59,7 +59,7 @@ export default function ContentArea() {
                       <p>Você já escolheu uma nação hoje!</p>
                       <p>O resultado estará disponível em:
                         {time < 17 || time === 17 && timeSum < 49 ?
-                          (beforeDraw) === 0 ?
+                          (beforeDraw) === 1 && timeSum > 46 ?
                             <span> menos de uma hora</span> :
                             <span> {beforeDraw} horas  </span> :
                           <span> {afterDraw} horas</span>}
