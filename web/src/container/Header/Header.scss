@@ -52,6 +52,20 @@
         outline: none;
 
     }
+
+    @media screen and(max-width: 400px) {
+        h1 {
+
+            a {
+                font-size: 2rem;
+            }
+        }
+
+        .app__header-nav-p {
+            font-size: 1rem;
+        }
+
+    }
 }
 
 .app__header-nav-toggle {
