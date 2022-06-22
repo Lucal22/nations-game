@@ -63,4 +63,9 @@ h2 {
     border: 1px solid $gray-color;
     border-radius: 1.5rem;
     z-index: 4;
+
+    @media screen and(max-width: 400px) {
+        height: auto;
+        max-width: 40rem;
+    }
 }
