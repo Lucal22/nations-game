@@ -37,7 +37,7 @@ O frontend foi hospedado no [Vercel](https://vercel.com/).
 [MIT](https://choosealicense.com/licenses/mit/)
 
 
-# Lucal Portfolio en-us
+# Nations game en-us
 
 This project is a responsive page developed using react.js to develop a gamble game that allows the user to select one of the 25 nations in the game. Everyday theres a draw that selects one of the 25 nations so the player can compare if had a lucky day.
 
