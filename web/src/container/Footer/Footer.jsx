@@ -10,7 +10,7 @@ export default function Footer() {
       <div className='app__footer-content'>
         <div className='app__footer-copyright'>
           <p>Copyright © {year}</p>
-          <p>Feito por <a href='https://lucal-portfolio.vercel.app/'
+          <p>Feito por <a href='https://portfolio-lucal.vercel.app/'
             target='_blank'
             rel='noopener noreferrer'
           ><span>Lucal</span></a> :)</p>
