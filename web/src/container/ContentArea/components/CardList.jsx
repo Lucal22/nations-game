@@ -109,8 +109,8 @@ const CardList = [
     },
     {
         id: '16',
-        country: 'Índia',
-        flag: images.india,
+        country: 'Irlanda',
+        flag: images.irlanda,
         number: '16',
         numbers: ['60', '61', '62', '63']
     },

@@ -7,7 +7,7 @@ import belgica from './img/be.svg'
 import canada from './img/ca.svg'
 import camaroes from './img/cm.svg'
 import grecia from './img/gr.svg'
-import india from './img/in.svg'
+import irlanda from './img/ie.svg'
 import coreiaSul from './img/kr.svg'
 import dinamarca from './img/dk.svg'
 import estadosUnidos from './img/us.svg'
@@ -34,7 +34,7 @@ export default {
     canada,
     camaroes,
     grecia,
-    india,
+    irlanda,
     coreiaSul,
     dinamarca,
     estadosUnidos,
