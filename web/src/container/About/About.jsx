@@ -16,7 +16,7 @@ export default function About() {
           <p><span>O intuito do projeto</span> é implementar todas as mecânicas de apostas existentes no jogo, sendo possível na primeira versão do website, a escolha de uma das nações e o sorteio de uma delas diariamente.</p>
 
           <p>O frontend será desenvolvido utilizando <span>react.js</span>. Para estilização foi utilizado SASS e outras bilbiotecas como framer motion e react icons. Para o desenvolvimento do backend, foi utilizado <span>node.js</span>.</p>
-          <p>Acesse o meu <a href='https://lucal-portfolio.vercel.app/'
+          <p>Acesse o meu <a href='https://lucaldev.com/'
             target='_blank'
             rel='noopener noreferrer'
           ><span>Portfolio</span></a> para ter acesso ao repositório do projeto.</p>
